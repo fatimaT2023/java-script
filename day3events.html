@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Events</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .card {
+            width: 300px;
+            margin: auto;
+            padding: 25px;
+            border: 2px solid #ccc;
+            border-radius: 15px;
+            transition: 0.3s;
+            /* mouseover VI */
+        }
+
+        .card img {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 15px;
+            cursor: pointer;
+            /* change the mouse */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card"
+         onmouseover="mouseOver()"
+         onmouseout="mouseOut()">
+
+        <img src="student.jpg" alt="Student">
+
+        <h2 id="name">Fatima Tawalbeh</h2>
+
+        <p id="message">
+            Welcome !
+        </p>
+<!-- inline event  -->
+        <button onclick="showMessage()">
+            Click Me
+        </button>
+
+    </div>
+
+
+    <script>
+
+        function showMessage() {
+
+            document.getElementById("message").textContent =
+                "Thank you for visiting my card!";
+
+        }
+
+
+        function mouseOver() {
+
+            document.getElementById("name").style.color = "pink";
+
+            document.querySelector(".card").style.transform =
+                "scale(1.5)";
+        }
+
+
+        function mouseOut() {
+
+            document.getElementById("name").style.color = "black";
+
+            document.querySelector(".card").style.transform =
+                "scale(1)";
+        }
+
+    </script>
+
+</body>
+</html>

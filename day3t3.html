@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change Image Shape</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #myImage {
+            width: 500px;
+            height: 700px;
+            object-fit: cover;
+        }
+
+        button {
+            margin: 10px;
+            padding: 8px;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Change Image Shape</h2>
+
+    <img id="myImage" src="sunset.jpeg">
+
+    <br>
+
+    <button onclick="makeCircle()">Make a Circle</button>
+    <button onclick="makeSquare()">Make a Square</button>
+
+    <script >
+        let image = document.getElementById("myImage");
+
+function makeCircle() {
+    image.style.borderRadius = "50%";
+}
+
+function makeSquare() {
+    image.style.borderRadius = "0";
+}
+    </script>
+
+</body>
+</html>

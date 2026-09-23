@@ -16,6 +16,8 @@ for (let i = 0; i <= 15; i++) {
         console.log(i + " is odd");
     }
 }
+
+
 // q3
 let number = "025468";
 let result = "";
@@ -28,7 +30,7 @@ for (let i = 0; i < number.length; i++) {
         result += "-";
     }
 }
-
+// 0-254-6-8
 console.log(result);
 
 

@@ -4,33 +4,33 @@ let menu = [
         name: "burgre",
         price: 2.5,
         category: "fast food",
-        available: true
+        available: true 
     },
     {
-        name: "ziger",
+        name: "ziger", 
         price: 3.5,
         category: "fast food",
         available: false
     },
     {
         name: "shawrma",
-        price: 1.5,
+        price: 1.5, 
         category: "fast food",
         available: true
     },
     {
         name: "salad",
         price: 4,
-        category: "healthy food",
+        category: "healthy food", 
         available: false
     },
     {
         name: "avocado",
-        price: 6,
+        price: 6, 
         category: "healthy food",
         available: true
     }
-];
+]; 
 
 
 function showMenu() {
@@ -40,19 +40,20 @@ function showMenu() {
         console.log(
             menu[i].name + " - $" + menu[i].price
         );
-    }
+    }  
 }
 
 
 showMenu();
 
-
+// 3 for        +   for in
 let ask = prompt("Please enter your order from the menu:");
-
+//  return a only string 
 let selected = null;
-
+// means we not slected a food yet 
 
 while (selected === null) {
+    // cause wo dont know how many times a user will write wrong 
 
     for (let i = 0; i < menu.length; i++) {
 
@@ -79,6 +80,9 @@ while (selected === null) {
 
 console.log("Selected Food:");
 
+
+
+// properties 
 for (let property in selected) {
 
     console.log(property + ": " + selected[property]);
