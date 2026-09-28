@@ -1,0 +1,24 @@
+[
+  {
+    "name":"burger",
+    "price": 2,
+    "availability":true
+  },
+  {
+    "name":"salad",
+    "price": 3,
+    "availability":false
+  },
+  {
+
+   "name":"avoado",
+    "price": 6,
+    "availability":false
+  },
+  {
+
+   "name":"avoado",
+    "price": 6,
+    "availability":false
+  }
+]

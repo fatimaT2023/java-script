@@ -47,7 +47,7 @@ function showMenu() {
 showMenu();
 
 // 3 for        +   for in
-let ask = prompt("Please enter your order from the menu:");
+let ask = prompt("Please enter your order from the menu:burgre,ziger,shawrma,salad,avocado");
 //  return a only string 
 let selected = null;
 // means we not slected a food yet 
